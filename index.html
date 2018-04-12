@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<!-- <link rel="stylesheet" href="./css/style.css" /> -->
+<link rel="stylesheet" href="./css/matrix.css" />
+<!-- <link rel="stylesheet" href="./css/bar-graph.css" /> -->
+<body>
+  
+  <div class="row text-left">
+      <div class="col-md-6">
+        <div id="matrix">
+          <script src="//d3js.org/d3.v3.min.js"></script>
+          <script src="scripts/matrix.js"></script>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <br>
+        <div>
+            <span id="setosa" class="color-box"></span><span>Iris setosa</span>
+          </div>
+          <div>
+            <span id="versicolor" class="color-box"></span><span>Iris versicolor</span>
+          </div>
+          <div>
+            <span id="virginica" class="color-box"></span><span>Iris virginica</span>
+          </div>
+          <div id="plots"></div>
+          <br>
+          <iframe id="frame" src="bar-chart.html" width="90%" height="470px" frameBorder="0"></iframe>
+      </div>
+  </div>
+
+
+<script src="./scripts/d3.v3.min.js" charset="utf-8"></script>
+<!-- <script src="./scripts/bar-graph.js"></script> -->
+<script src="./scripts/jquery-1.11.0.min.js" charset="utf-8"></script>
+<script src="./scripts/iris.js" charset="utf-8"></script>
+</body>
+</html>
